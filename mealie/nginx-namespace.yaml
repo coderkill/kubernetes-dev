@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mischa
+  name: mischa
+  namespace: mealie
+spec:
+  containers:
+  - image: nginx
+    name: mischa
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
